@@ -24,6 +24,7 @@ return {
             vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
             vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, {})
             vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, {})
+            vim.keymap.set({ 'n', 'v' }, '<leader>ca', vim.lsp.buf.code_action, {})
         end
     }
 }
